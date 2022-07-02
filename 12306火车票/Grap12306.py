@@ -20,7 +20,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-#chromedriver version 101.0.4951.15 | chrome 102.0.5005.13
+
 sched = BlockingScheduler(timezone="Asia/Shanghai")
 
 # 判断是否有元素
@@ -88,11 +88,11 @@ def train_ticket():
         print('出现异常')
     # 输入账号
     input_account=driver.find_element(By.ID,'J-userName')
-    input_account.send_keys('youracount')
+    input_account.send_keys('a3311598')
     # 输入密码
 
     input_password=driver.find_element(By.ID,'J-password')
-    input_password.send_keys('yourpassword')
+    input_password.send_keys('******')
     # 点击登录按钮
 
     element = driver.find_element(By.ID, 'J-login')
